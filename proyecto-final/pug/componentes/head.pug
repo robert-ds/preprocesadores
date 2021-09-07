@@ -1,0 +1,49 @@
+mixin stats(valor,leyenda)
+  .estadistica_elemento
+    h3=valor
+    span=leyenda
+
+mixin article(categoria,titulo,descripcion)
+  .articulo
+    span.articulo__categoria=categoria
+    h2.articulo__titulo=titulo
+    p.articulo__descripcion=descripcion
+
+mixin caja(imagen,categoria,titulo,contenido)
+  .caja
+    .caja__imagen: img(src="../images/"+imagen)
+    .caja__contenido
+      span.caja__categoria=categoria
+      h3=titulo
+      p=contenido
+      a Leer Más
+
+mixin caja--estadistica(imagen,categoria,titulo,sumario)
+  .caja
+    a(href="#", class="card__image"): img(src="../images/"+imagen)
+    .caja__contenido
+      span.card__categoria=categoria
+      h3=titulo
+      p=sumario
+    +estadistica
+
+mixin estadistica
+  .estadistica--articulos: ul
+    li
+      i #0
+      span 275
+    li
+      i #O
+      span 280
+    li
+      i #U
+      span 290
+
+doctype html
+html
+  head
+    title Z-Gamez
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width", maximum-scale="1.0", user-scalable="no")
+    link(rel="stylesheet", href="../../css/z-gamez.css")
+  body
