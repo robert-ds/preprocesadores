@@ -1,24 +1,19 @@
-doctype html
-html
-  include componentes/head.pug
-  include componentes/mixins.pug
-  body
-    include componentes/header.pug
-    main.contenedor--home
-      +caja--con-fondo-grande("imagen.jpg","Destacadas","Ciberpunk 2077 tiene tres prólogos distintos")
-      +caja--con-fondo-pequena("caja-rdr2","rdr2.jpg","PS4","Red dead Redemption 2 Llegará a PC")
-      .banner--homepage
-        h3 Apex Legends Temporada 2: un uevo trailer muestra cambios al mapa.
-        p Dos nuevos trailers de Apex Legends muestran lo que nos espera de la Temporada 2 del Batle royales
-        a.button Leer más
-      +caja--con-fondo-pequena("caja-ff","ff.jpg","PS4","Final fantasy XIV recibirá una serie live-action")
-      +caja--con-fondo-pequena("caja-xbox","xbox.jpg","XBOX","Conoce las actualizaciones de XBOX Game Pass")
-      +caja--con-fondo-pequena("caja-fortnite","fortnite.jpg","FORTNITE","Fortnite une fuerzas con Stranger")
-      +caja--con-fondo-pequena("caja-zelda","zelda.jpg","SWITCH","Secuela de The Legend of Zelda: Breath of the wild")
-      .sidebar--listado
-        h3 Noticias Destacadas
-        ul
-          +listado--categoria("1","GTA VI: Filtraciones que son bastante dudosas")
-          +listado--categoria("2","Secuela de The Legend of Zelda: breath of the wild anunciada en el E3 2019")
-          +listado--categoria("1","GTA VI: Filtraciones que son bastante dudosas")
-    include componentes/footer.pug
+extends plantilla.pug
+block contenidos
+  main.contenedor--home
+    +caja--con-fondo-grande("imagen.jpg","Destacadas","Ciberpunk 2077 tiene tres prólogos distintos")
+    +caja--con-fondo-pequena("caja-rdr2","rdr2.jpg","PS4","Red dead Redemption 2 Llegará a PC")
+    .banner--homepage
+      h3 Apex Legends Temporada 2: un uevo trailer muestra cambios al mapa.
+      p Dos nuevos trailers de Apex Legends muestran lo que nos espera de la Temporada 2 del Batle royales
+      a.button Leer más
+    +caja--con-fondo-pequena("caja-ff","ff.jpg","PS4","Final fantasy XIV recibirá una serie live-action")
+    +caja--con-fondo-pequena("caja-xbox","xbox.jpg","XBOX","Conoce las actualizaciones de XBOX Game Pass")
+    +caja--con-fondo-pequena("caja-fortnite","fortnite.jpg","FORTNITE","Fortnite une fuerzas con Stranger")
+    +caja--con-fondo-pequena("caja-zelda","zelda.jpg","SWITCH","Secuela de The Legend of Zelda: Breath of the wild")
+    .sidebar--listado
+      h3 Noticias Destacadas
+      ul
+        +listado--categoria("1","GTA VI: Filtraciones que son bastante dudosas")
+        +listado--categoria("2","Secuela de The Legend of Zelda: breath of the wild anunciada en el E3 2019")
+        +listado--categoria("1","GTA VI: Filtraciones que son bastante dudosas")
