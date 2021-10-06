@@ -4,7 +4,15 @@
 
 //- Para usar los valores de la variable titulo empleamos el caracter # {nombre variable} y seguido del indice del valor de la variable ejemplo #{titulos[1]}
 
--var usuario = "Robert"
+-var usuario = "Robert";
+
+//- Mixin son utiles para crear platillas reutilizables
+mixin caja(imagen,titulo,contenido)
+      .caja
+        .caja__imagen: img(src="../images/"+imagen)
+        .caja__contenido
+          h3=titulo
+          p=contenido
 
 doctype html
 html
@@ -32,18 +40,6 @@ html
               //-     li=titulo
 
     main.contenido
-      .caja
-        .caja__imagen: img(src="../images/Z-Gamez.png")
-        .caja__contenido
-          h3 #{titulos[0]}
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?
-      .caja
-        .caja__imagen: img(src="../images/Z-Gamez.png")
-        .caja__contenido
-          h3 #{titulos[1]}
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?
-      .caja
-        .caja__imagen: img(src="../images/Z-Gamez.png")
-        .caja__contenido
-          h3 #{titulos[2]}
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?
+      +caja('Z-Gamez.png',titulos[0],'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?')
+      +caja('Z-Gamez.png',titulos[1],'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?')
+      +caja('Z-Gamez.png',titulos[2],'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?')
