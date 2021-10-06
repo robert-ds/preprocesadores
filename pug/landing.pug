@@ -26,7 +26,24 @@ html
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perspiciatis sit dolorum consectetur. Iste esse, corrupti tempore libero nobis maiores quos veniam. Sint, quo earum! Beatae, rerum! In, nihil! Aliquam!
         span Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe deserunt aspernatur impedit, porro tenetur molestiae sit quasi? Quas expedita, laboriosam ad ex optio id! Corrupti nemo porro adipisci vero!
         a.boton LEER MAS...
-//- Como declarar Loops con pug
-ul
-  each titulo in titulos
-    li=titulo
+              //- Como declarar Loops con pug
+              //- ul
+              //-   each titulo in titulos
+              //-     li=titulo
+
+    main.contenido
+      .caja
+        .caja__imagen: img(src="../images/Z-Gamez.png")
+        .caja__contenido
+          h3 #{titulos[0]}
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?
+      .caja
+        .caja__imagen: img(src="../images/Z-Gamez.png")
+        .caja__contenido
+          h3 #{titulos[1]}
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?
+      .caja
+        .caja__imagen: img(src="../images/Z-Gamez.png")
+        .caja__contenido
+          h3 #{titulos[2]}
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque velit voluptates quod impedit atque, deserunt, laudantium rem nobis nostrum non doloribus a voluptatum expedita numquam aspernatur sunt fuga aperiam?

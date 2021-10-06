@@ -71,3 +71,35 @@ h1{
   font-style: italic;
   margin-bottom: 30px;
 }
+
+.contenido{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+}
+
+.caja{
+  display: inline-block;
+  width: 300px;
+  background-color: #78b2f5;
+}
+
+.caja__imagen{
+  display: inline-block;
+  width: 100%;
+}
+
+.caja__contenido{
+  padding: 15px;
+}
+
+.caja__contenido h3{
+  margin-bottom: 5px;
+}
+
+.caja__imagen > img{
+  display: inline-block;
+  width: 100%;
+  height: 50%px;
+}
