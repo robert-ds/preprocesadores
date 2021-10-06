@@ -1,3 +1,9 @@
+//- formas de declarar variables con pug
+-var titulo = "TITULO PRINCIPAL";
+-var titulos = ["SUBTITULO-1","SUBTITULO-2","SUBTITULO-3"];
+
+//- Para usar los valores de la variable titulo empleamos el caracter # {nombre variable} y seguido del indice del valor de la variable ejemplo #{titulos[1]}
+
 doctype html
 html
   head
@@ -5,12 +11,12 @@ html
     link(rel="stylesheet", href="../pug/css/main.css")
   body
     header
-      h1 Z-GAMEZ
+      h1 Z-GAMEZ #{titulos[2]}
       a.boton REGISTRO
     section.intro
       .intro__imagen: img(src="../images/Z-Gamez.png")
       .intro__contenido
-        h2 Título Principal
+        h2=titulo
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perspiciatis sit dolorum consectetur. Iste esse, corrupti tempore libero nobis maiores quos veniam. Sint, quo earum! Beatae, rerum! In, nihil! Aliquam!
         span Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe deserunt aspernatur impedit, porro tenetur molestiae sit quasi? Quas expedita, laboriosam ad ex optio id! Corrupti nemo porro adipisci vero!
         a.boton LEER MAS...
