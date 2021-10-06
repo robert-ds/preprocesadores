@@ -34,3 +34,40 @@ h1{
   text-align: center;
   padding-top: 12px;
 }
+
+.intro{
+  display: flex;
+  justify-content: space-around;
+  height: 320px;
+  background-color: #83b5ee;
+  padding: 40px;
+}
+
+.intro__imagen{
+  display: inline-block;
+}
+
+.intro__imagen > img{
+  width: 300px;
+  height: 320px;
+  border-radius: 5px;
+}
+
+.intro__contenido{
+  display: inline-block;
+  margin-left: 30px;
+  height: 400px;
+}
+
+.intro__contenido p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.intro__contenido span{
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 30px;
+}
