@@ -4,6 +4,8 @@
 
 //- Para usar los valores de la variable titulo empleamos el caracter # {nombre variable} y seguido del indice del valor de la variable ejemplo #{titulos[1]}
 
+-var usuario = "Robert"
+
 doctype html
 html
   head
@@ -12,7 +14,11 @@ html
   body
     header
       h1 Z-GAMEZ #{titulos[2]}
-      a.boton REGISTRO
+      if usuario
+        a.boton Hola #{usuario}
+      else
+        a.boton REGISTRO
+
     section.intro
       .intro__imagen: img(src="../images/Z-Gamez.png")
       .intro__contenido
@@ -20,3 +26,7 @@ html
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perspiciatis sit dolorum consectetur. Iste esse, corrupti tempore libero nobis maiores quos veniam. Sint, quo earum! Beatae, rerum! In, nihil! Aliquam!
         span Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe deserunt aspernatur impedit, porro tenetur molestiae sit quasi? Quas expedita, laboriosam ad ex optio id! Corrupti nemo porro adipisci vero!
         a.boton LEER MAS...
+//- Como declarar Loops con pug
+ul
+  each titulo in titulos
+    li=titulo
