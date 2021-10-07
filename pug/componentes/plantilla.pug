@@ -1,28 +1,9 @@
-//- formas de declarar variables con pug
--var titulo = "TITULO PRINCIPAL";
--var titulos = ["SUBTITULO-1","SUBTITULO-2","SUBTITULO-3"];
-
-//- Para usar los valores de la variable titulo empleamos el caracter # {nombre variable} y seguido del indice del valor de la variable ejemplo #{titulos[1]}
-
--var usuario = "Robert";
-
-//- Mixin son utiles para crear platillas reutilizables
-mixin caja(imagen,titulo,contenido)
-      .caja
-        .caja__imagen: img(src="./images/"+imagen)
-        .caja__contenido
-          h3=titulo
-          p=contenido
-
+include configuraciones.pug
 doctype html
 html
   //- Incluir un archivo externo o componente
   include head.pug
   body
-    header
-      h1 Z-GAMEZ #{titulos[2]}
-      if usuario
-        a.boton Hola #{usuario}
-      else
-        a.boton REGISTRO
+    include header.pug
     block contenidos
+    include footer.pug
