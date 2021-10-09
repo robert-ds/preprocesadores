@@ -1,12 +1,15 @@
-head
-  meta(charset="UTF-8")
-  link(rel="stylesheet", href="../css/main.css ")
-
-
-mixin caja(imagen,plataforma,titulo,contenido)
+mixin caja(imagen,categoria,titulo,contenido)
       .caja
         .caja__imagen: img(src="../images/"+imagen)
         .caja__contenido
+          span.caja__categoria=categoria
           h3=titulo
-          span=platforma
           p=contenido
+          a Leer Más
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../css/main.css ")
+

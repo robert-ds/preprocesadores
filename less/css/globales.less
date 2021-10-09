@@ -4,6 +4,17 @@
 @color-variacion: #012179;
 @fuente1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 @fuente2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@fuente-base: 18px;
+
+.sombra-caja{
+  box-shadow: 0px 5px 15px 0px fade(@color-primario, 50%) ;
+}
+
+.Lusida{
+  font-family:@fuente2;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 *{
   margin: 0;
@@ -14,10 +25,10 @@
 body{
   font-family: @fuente1;
   color: @color-primario;
+  line-height: @fuente-base + 15%;
 }
 
 h1,h2,h3{
-  font-family: @fuente2;
-  text-transform: uppercase;
   margin-top: 10px;
+  .Lusida;
 }
