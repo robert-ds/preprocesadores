@@ -1,0 +1,23 @@
+$funte1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fuente2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$color-primario: #333333;
+$color-claro: #ffffff;
+$color-secundario: #8841DA;
+$color-variacion: #3f579a;
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $funte1;
+}
+
+main{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}

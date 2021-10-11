@@ -1,0 +1,36 @@
+.ubicacion--perfil{
+  width: 50%;
+  height: 90px;
+  margin: 30px auto;
+  padding: 20px 0 0 20px;
+  border-radius: 20px;
+  background-color: $color-claro;
+
+  i{
+    display: block;
+    float: left;
+    padding-right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/maps-48.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  h2{
+    text-transform: uppercase;
+    font-family: $fuente2;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: $color-primario;
+  }
+  h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-family: $fuente2;
+    color: $color-primario;
+    margin-top: 5px;
+  }
+}
