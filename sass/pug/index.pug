@@ -1,0 +1,29 @@
+include head.pug
+main
+  section.perfil
+    img(class="perfil__avatar" src="../images/faceciberpunk.jpg")
+    h2.perfil__nombre Jonh Connor
+    h3.perfil__titulo Developer Sr.
+    a(href="#" class="perfil__boton") Seguir
+    .estadistica--perfil
+      +stats("12k","Seguidores")
+      +stats("1.7k","Siguiendo")
+      +stats("48k","Artículos")
+    .perfil__minibio
+    h2 Acerca de Mi
+    h3 Developer Especializado en Tecnologías Java
+    .ubicacion--perfil
+      i.fas.fa-map-marker-alt
+      h2 Estados Unidos
+      h3 225km Cerca
+    .galeria
+      h2 Mis Fotos
+      .galeria__foto-principal: img(src="../images/b-person.jpg")
+      .galeria__fotos-adicionales
+        img(src="../images/b-blc.jpg" width="160px")
+        img(src="../images/art.jpg")
+        img(src="../images/b-blck.jpg")
+  aside.articulos
+    +article("PlayStation", "GTA VI: jfkajkjakdjwkjw")
+    +article("Switch", "Secuela de una gran")
+    +article("Xbox", "Gram read online recibe")

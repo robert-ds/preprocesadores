@@ -1,0 +1,16 @@
+mixin stats(valor,leyenda)
+  .estadistica_elemento
+    h3=valor
+    span=leyenda
+mixin article(categoria,titulo,descripcion)
+  .articulo
+    span.articulo__categoria=categoria
+    h2.articulo__titulo=titulo
+    p.articulo__descripcion=descrpcion
+doctype html
+html
+  head
+    title Z-Games
+    meta(charset="UTF-8")
+    meta(name="viewport", content="with=device-width", initial-scale=1.0)
+    link(rel="stylesheet", href="../css/main.css")
