@@ -29,7 +29,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .perfil {
@@ -156,7 +156,7 @@ main {
 }
 
 .galeria {
-  width: 50%;
+  width: 60%;
   height: 250px;
   margin: 10px auto;
   padding: 20px 0 0 30px;
@@ -192,4 +192,32 @@ main {
 }
 .galeria img {
   border-radius: 5px;
+}
+
+.articulos {
+  width: 40%;
+  padding: 50px 0 0 50px;
+}
+
+.articulo {
+  margin-bottom: 75px;
+  border-bottom: 3px solid #8841DA;
+}
+.articulo__categoria {
+  font-weight: 500;
+  font-size: 16px;
+  color: #8841DA;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+}
+.articulo__titulo {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+}
+.articulo__descripcion {
+  margin-bottom: 30px;
+  padding-right: 100px;
 }
