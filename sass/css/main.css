@@ -1,3 +1,18 @@
+h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -34,10 +49,10 @@ main {
   background-repeat: no-repeat;
 }
 .perfil__nombre, .perfil__minibio h2 {
-  text-transform: uppercase;
   text-align: center;
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
 }
 .perfil__titulo, .perfil__minibio h3 {
   display: block;
@@ -55,9 +70,9 @@ main {
   padding-top: 8px;
   border-radius: 20px;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(51, 51, 51, 0.7);
   border: 2px solid rgba(255, 255, 255, 0.7);
@@ -87,16 +102,16 @@ main {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
   color: #333333;
 }
 .estadistica--perfil span {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
   color: #333333;
   opacity: 75%;
 }
@@ -170,8 +185,8 @@ main {
 }
 .galeria h2 {
   margin-bottom: 10px;
-  text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
 }
