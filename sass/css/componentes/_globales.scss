@@ -12,6 +12,10 @@ $color-variacion: #3f579a;
   color: $color-primario;
 }
 
+@function get-opacity($color, $nivel){
+  @return rgba($color, $nivel);
+}
+
 *{
   margin: 0px;
   padding: 0px;

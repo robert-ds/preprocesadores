@@ -29,7 +29,7 @@
     text-align: center;
     font-size: 12px;
     font-family: $fuente2;
-    color: $color-primario;
+    color: get-opacity($color-primario, .50);
     margin-top: 5px;
   }
 }

@@ -45,19 +45,22 @@ main {
   text-align: center;
   font-weight: 700;
   font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .perfil__boton {
   display: block;
   width: 100px;
   height: 40px;
   margin: 15px auto;
-  padding-top: 15px;
+  padding-top: 8px;
   border-radius: 20px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffffff;
+  background-color: rgba(51, 51, 51, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .perfil__minibio {
@@ -133,6 +136,45 @@ main {
   text-align: center;
   font-size: 12px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #333333;
+  color: rgba(51, 51, 51, 0.5);
   margin-top: 5px;
+}
+
+.galeria {
+  width: 50%;
+  height: 250px;
+  margin: 10px auto;
+  padding: 20px 0 0 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  color: #333333;
+}
+.galeria__foto-principal {
+  float: left;
+  margin-right: 10px;
+}
+.galeria__foto-principal img {
+  width: 120px;
+  height: 170px;
+  border-radius: 5px;
+}
+.galeria__fotos-adicionales img {
+  height: 70px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.galeria h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.galeria img {
+  border-radius: 5px;
 }
