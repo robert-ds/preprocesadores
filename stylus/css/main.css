@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.buscador {
+  width: 100%;
+  height: 250px;
+  padding: 100px;
+  background-image: url("../images/cover.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.buscador__input {
+  width: 75%;
+  height: 60px;
+  padding: 250px;
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+}
