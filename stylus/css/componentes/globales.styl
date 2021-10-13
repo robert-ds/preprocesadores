@@ -16,7 +16,19 @@ caja-sombra()
 
 opacidad(color, cantidad)
   alpha(color,cantidad)
-  
+
+for header in 3 2 1
+  h{header}
+    font-size: 35px - (5*header)
+    margin: 0
+
+titulos(fuente)
+  if fuente == fuente1
+    font-family: fuente1
+  else
+    font-family: fuente2
+    font-weight: 600
+    text-transform: uppercase
 
 *
   margin: 0
@@ -24,5 +36,5 @@ opacidad(color, cantidad)
   box-sizing: border-box
 
 body
-  font-family: fuente2
   color: color-primario
+  titulos(fuente1)

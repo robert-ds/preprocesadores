@@ -1,3 +1,15 @@
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+h1 {
+  font-size: 30px;
+  margin: 0;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +17,8 @@
           box-sizing: border-box;
 }
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .buscador {
   width: 100%;
@@ -36,10 +48,11 @@ body {
 }
 .encabezado--con-filtros h2 {
   margin-top: 10px;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 50px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .encabezado--con-filtros .filtros {
   width: 250px;
@@ -51,8 +64,9 @@ body {
           box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.3);
 }
 .encabezado--con-filtros .filtros span {
-  text-transform: uppercase;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
 }
 .encabezado--con-filtros .filtros a {
@@ -90,15 +104,17 @@ body {
   background-color: #fff;
 }
 .caja__contenido span {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   color: #8141da;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 5px;
 }
 .caja__contenido h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   font-weight: normal;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 10px;
 }
 .estadistica--articulos {
